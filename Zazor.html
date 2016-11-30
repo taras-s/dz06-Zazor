@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Zazor</title>
+<link rel="stylesheet" href="css/style.css">
+<!-- <link rel="stylesheet" href="font/fonts.css"> -->
+<!-- <script src="js/script.js"></script> -->
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+</head>
+<body>
+
+<div class='parent'>
+
+
+<!-- =========================================== HEADER + IMG ========= -->
+
+	<header>
+
+	<div class="top top-contact">
+		<img src="img/phone.png" alt="contact us">
+		<span>(044)123-45-67 (044)567-89-10</span>
+	</div>
+
+	<div class="top top-login">
+		<img src="img/person.svg" alt="login">
+
+
+		<form action="action_page.php" method="post">
+			<input type="text" name="login" placeholder="логин">
+			<input type="text" name="pass" placeholder="пароль">
+			<input type="submit" value="вход">
+		</form> 
+		<span>|</span> 
+		<a href="#regist" class='txt-wt'>регистрация</a>  
+		<a href="#recov">забыли пароль?</a>
+	</div>
+
+	<div class="top top-navig">
+		<a href="#home">
+		<img src="img/c-home.svg" alt="home"></a><a href="#map">
+		<img src="img/c-map.svg" alt="map"></a><a href="#mail">
+		<img src="img/c-mail.svg" alt="mail"></a>
+	</div>
+
+	<img class='head-img' src="img/head.jpg" alt="Zazor.com.ua">
+	</header>
+
+<!-- ============================================= MENU ============= -->
+
+	<div class='menu-bar'>
+
+		<ul>
+			<li><a href="#">О компани</a></li>
+			<li><a href="#">Оплата</a></li>
+			<li><a href="#">Доставка</a></li>
+			<li><a href="#">Статьи</a></li>
+			<li><a href="#">Контакты</a></li>
+		</ul>
+
+		<span><img src='img/bag.png' alt='bag'></span>
+		<span>товаров: 0    на сумму: 0,00 грн.</span>
+
+	</div>
+
+<!-- ============================================ SEARCH ================= -->
+
+	<div class='search'>
+
+		<div class='search-bar sbar-1'>
+
+			<p class="search-header">Диски: 
+			<span>Поиск по автомобилю</span> Шины:</p>
+
+			<form action="#">
+
+				<input class='w101' list="brand" name="brand">
+					<datalist id="brand">
+						<option value="Audi">
+						<option value="BMW">
+						<option value="Opel">
+						<option value="Lada">
+						<option value="Tesla">
+					</datalist><br>
+
+				<input class='w101' list="model" name="model">
+					<datalist id="model">
+						<option value="Model-1">
+						<option value="Model-2">
+						<option value="Model-3">
+						<option value="Model-4">
+						<option value="Model-5">
+					</datalist><br>
+
+				<input class='w057' list="year" name="year">
+					<datalist id="year">
+						<option value="1996">
+						<option value="1997">
+						<option value="2003">
+						<option value="2004">
+						<option value="2005">
+					</datalist><br>
+
+				<input class='w101' list="compl" name="compl">
+					<datalist id="compl">
+						<option value="Standart">
+						<option value="Extended">
+						<option value="Delux">
+					</datalist>
+
+				<input type="submit" value="поиск...">
+			</form>
+
+			<div>
+				<span><b>Марка</b> авто:</span>
+				<span><b>Модель</b><br>автомобиля:</span>
+				<span><b>Год выпуска</b><br>автомобиля:</span>
+				<span><b>Комплектация:</b></span>
+			</div>
+
+			<form action="#" id="form2">
+
+				<input class='w101' list="brand" name="brand">
+					<datalist id="brand">
+						<option value="Audi">
+						<option value="BMW">
+						<option value="Opel">
+						<option value="Lada">
+						<option value="Tesla">
+					</datalist><br>
+
+				<input class='w101' list="model" name="model">
+					<datalist id="model">
+						<option value="Model-1">
+						<option value="Model-2">
+						<option value="Model-3">
+						<option value="Model-4">
+						<option value="Model-5">
+					</datalist><br>
+
+				<input class='w057' list="year" name="year">
+					<datalist id="year">
+						<option value="1996">
+						<option value="1997">
+						<option value="2003">
+						<option value="2004">
+						<option value="2005">
+					</datalist><br>
+
+				<input class='w101' list="compl" name="compl">
+					<datalist id="compl">
+						<option value="Standart">
+						<option value="Extended">
+						<option value="Delux">
+					</datalist>
+
+				<input type="submit" value="поиск...">
+			</form>
+
+			<div id="text2">
+				<span><b>Марка</b> авто:</span>
+				<span><b>Модель</b><br>автомобиля:</span>
+				<span><b>Год выпуска</b><br>автомобиля:</span>
+				<span><b>Комплектация:</b></span>
+			</div>
+
+
+		</div>
+
+		<div class='search-bar sbar-2'>
+			<img src="img/search-2.png" alt="it is fake form">
+		</div>
+
+		<div class='search-bar sbar-3'>
+			<img src="img/search-3.png" alt="it is fake form">
+		</div>
+
+	</div>
+
+
+<!-- ============================================= GOODS ============= -->
+
+	<div class='goods'>
+
+<!-- ............................. catalog .............. -->
+
+		<div class='gbar gbar-1'>
+
+			<div class='rnd-razdel'>
+			<img src="img/icon-cat.png" alt="">
+			<span>Каталог продукции</span></div>
+
+			<div class='rnd-rubr'>
+				<span></span> <p>Шины</p>
+			</div>
+
+			<ul class='rnd-menu'>
+				<li><a href='#'><span></span>Наименование 1</a></li>
+				<li><a href='#'><span></span>Наименование 2</a></li>
+				<li><a href='#'><span></span>Наименование 3</a></li>
+				<li><a href='#'><span></span>Наименование 4</a></li>
+			</ul>
+
+			<div class='rnd-rubr'>
+				<span></span> <p>Диски</p>
+			</div>
+
+			<ul class='rnd-menu'>
+				<li><a href='#'><span></span>Наименование 1</a></li>
+				<li><a href='#'><span></span>Наименование 2</a></li>
+				<li><a href='#'><span></span>Наименование 3</a></li>
+				<li><a href='#'><span></span>Наименование 4</a></li>
+			</ul>
+
+			<div class='rnd-rubr'>
+				<span></span> <p>Болты</p>
+			</div>
+
+			<ul class='rnd-menu'>
+				<li><a href='#'><span></span>Наименование 1</a></li>
+				<li><a href='#'><span></span>Наименование 2</a></li>
+				<li><a href='#'><span></span>Наименование 3</a></li>
+				<li><a href='#'><span></span>Наименование 4</a></li>
+			</ul>
+
+		</div>
+
+<!-- ............................. list .............. -->
+
+			<table class='gbar gbar-2'>
+
+				<tr>
+					<td>
+						<p class='itm'>Goodyear</p>
+						<p class='itm itm-name'>Ultra Grip Extreme</p>
+						<a href="#" class='itm-img'><img src="img/item-01.jpg"></a>
+						<p class='itm itm-prc'>90.00 грн.</p>
+					</td>
+
+					<td>
+						<p class='itm'>Nokian</p>
+						<p class='itm itm-name'>Hakkapeliitta R</p>
+						<a href="#" class='itm-img'><img src="img/item-02.jpg"></a>
+						<p class='itm itm-prc'>115.00 грн.</p>
+					</td>
+
+					<td>
+						<p class='itm'>Hankook</p>
+						<p class='itm itm-name'>K 708 155/65 R14</p>
+						<a href="#" class='itm-img'><img src="img/item-03.jpg"></a>
+						<p class='itm itm-prc'>393.00 грн.</p>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<p class='itm'>Goodyear</p>
+						<p class='itm itm-name'>Ultra Grip Extreme</p>
+						<a href="#" class='itm-img'><img src="img/item-01.jpg"></a>
+						<p class='itm itm-prc'>90.00 грн.</p>
+					</td>
+
+					<td>
+						<p class='itm'>Nokian</p>
+						<p class='itm itm-name'>Hakkapeliitta R</p>
+						<a href="#" class='itm-img'><img src="img/item-02.jpg"></a>
+						<p class='itm itm-prc'>115.00 грн.</p>
+					</td>
+
+					<td>
+						<p class='itm'>Hankook</p>
+						<p class='itm itm-name'>K 708 155/65 R14</p>
+						<a href="#" class='itm-img'><img src="img/item-03.jpg"></a>
+						<p class='itm itm-prc'>393.00 грн.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p class='itm'>Goodyear</p>
+						<p class='itm itm-name'>Ultra Grip Extreme</p>
+						<a href="#" class='itm-img'><img src="img/item-01.jpg"></a>
+						<p class='itm itm-prc'>90.00 грн.</p>
+					</td>
+
+					<td>
+						<p class='itm'>Nokian</p>
+						<p class='itm itm-name'>Hakkapeliitta R</p>
+						<a href="#" class='itm-img'><img src="img/item-02.jpg"></a>
+						<p class='itm itm-prc'>115.00 грн.</p>
+					</td>
+
+					<td>
+						<p class='itm'>Hankook</p>
+						<p class='itm itm-name'>K 708 155/65 R14</p>
+						<a href="#" class='itm-img'><img src="img/item-03.jpg"></a>
+						<p class='itm itm-prc'>393.00 грн.</p>
+					</td>
+				</tr>
+			</table>
+
+<!-- ............................. brand filter .............. -->
+
+		<div class='gbar gbar-3'>
+
+			<div class='rnd-razdel'>
+			<img src="img/icon-cat.png" alt="">
+			<span>Бренды:</span></div>
+
+			<div class='rnd-rubr'>
+				<span></span> <p>Шины</p>
+			</div>
+
+			<ul class='rnd-menu'>
+				<li><a href='#'><span></span>Бренд 1</a></li>
+				<li><a href='#'><span></span>Бренд 2</a></li>
+				<li><a href='#'><span></span>Бренд 3</a></li>
+			</ul>
+
+			<div class='rnd-rubr'>
+				<span></span> <p>Диски</p>
+			</div>
+
+			<ul class='rnd-menu'>
+				<li><a href='#'><span></span>Бренд 1</a></li>
+				<li><a href='#'><span></span>Бренд 2</a></li>
+				<li><a href='#'><span></span>Бренд 3</a></li>
+			</ul>
+
+		</div>
+
+	</div>
+
+<!-- ============================================= BRAND LOGOS ============= -->
+
+	<div class='brand-logo'>
+		<a href="#"><img src="img/sp-logo-08.png" alt="Toyo Tires"></a>
+		<a href="#"><img src="img/sp-logo-07.png" alt="Bridgestone"></a>
+		<a href="#"><img src="img/sp-logo-06.png" alt="Continental"></a>
+		<a href="#"><img src="img/sp-logo-05.png" alt="Cooper"></a>
+		<a href="#"><img src="img/sp-logo-04.png" alt="Avon"></a>
+		<a href="#"><img src="img/sp-logo-03.png" alt="TFactory"></a>
+		<a href="#"><img src="img/sp-logo-02.png" alt="Pirelli"></a>
+		<a href="#"><img src="img/sp-logo-01.png" alt="Dunlop"></a>
+	</div>
+
+
+	<footer>
+		<p>	<a href='#'>О компании</a> |
+			<a href='#'>Доставка</a> |
+			<a href='#'>Статьи</a> |
+			<a href='#'>Контакты</a>
+		</p>
+		<small>Создание сайта © Global Vision</small>
+	</footer>
+
+</div>
+
+</body></html>
